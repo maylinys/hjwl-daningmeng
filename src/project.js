@@ -1022,7 +1022,7 @@ window.__require = function e(t, n, o) {
             scale: .9
           }).union().repeatForever().start()
         }, t.prototype.update = function (e) {
-        }, t.prototype.adsButtonFunc2 = function () {
+        }, /*去广告t.prototype.adsButtonFunc2 = function () {
           if (adLink) {
             window.location.href = adLink
           }
@@ -1030,7 +1030,7 @@ window.__require = function e(t, n, o) {
           if (adLink) {
             window.location.href = adLink
           }
-        }, t.prototype.ShowFailedUi = function (e, t) {
+        }, */t.prototype.ShowFailedUi = function (e, t) {
           var n = this;
           this.scheduleOnce(function () {
             r.default.Instance.HideScorePanel(), n.levelTxt.string = r.default.Instance.level.toString(), n.scoreLabel.string = s.default.score.toString(), n.highScoreLabel.string = t, n.resultTxt.string = n.GetContentByScore(e), n.overTxt.string = "\u5f53\u524d\u5173\u5361\u5df2\u5b8c\u6210" + Math.floor(r.default.Instance.nowYQ / r.default.Instance.passlevelYQ * 100) + "%", n.canClick = !1, n.levelTxt.string = e, n.bgMask.runAction(cc.fadeTo(.36, 150)), n.scheduleOnce(function () {
@@ -1468,7 +1468,7 @@ window.__require = function e(t, n, o) {
     cc._RF.push(t, "197e1hfNnxIcJx73V3VhUxY", "HttpManagerJs");
     var a = e("GameConfig"),
       i = (c(o = {
-        URL: "http://www.wesane.com/h5service.php/Interface/services",
+        /*URL: "http://www.wesane.com/h5service.php/Interface/services",*/
         cacheList: null,
         isBusy: null,
         req: null,
@@ -1787,8 +1787,8 @@ window.__require = function e(t, n, o) {
         gameT1: "\u5173\u6ce8\u6211\u4eec",
         gameT2: "\u7eb8\u724c\u63a5\u9f99",
         gameT3: "\u9526\u4e0a\u6dfb\u82b1",
-        gameUrl1: "http://g.regogame.com/game/9/",
-        gameUrl2: "http://g.regogame.com/game/3/",
+        /*gameUrl1: "http://g.regogame.com/game/9/",
+        gameUrl2: "http://g.regogame.com/game/3/",*/
         gameT11: "\u5173\u6ce8\u5fae\u4fe1",
         gameT12: "\u5173\u6ce8Kakao",
         gameT13: "\u5173\u6ce8Line",
@@ -1808,8 +1808,8 @@ window.__require = function e(t, n, o) {
         gameT1: "Follow Us",
         gameT2: "Thousand Flower",
         gameT3: "Eliminate Star",
-        gameUrl1: "http://g.fromgame.com/game/53",
-        gameUrl2: "http://g.fromgame.com/game/13",
+        /*gameUrl1: "http://g.fromgame.com/game/53",
+        gameUrl2: "http://g.fromgame.com/game/13",*/
         gameT11: "Focus WeChat",
         gameT12: "Focus Kakao",
         gameT13: "Focus Line",
@@ -2132,15 +2132,15 @@ window.__require = function e(t, n, o) {
             a = 0,
             i = c.substring(c.lastIndexOf("/game/") + 1, c.length).split("/");
           i.length >= 2 && (a = i[1]), this.gameHttpId = a, cc.log("gameId", a);
-          /*
+          /*may
           e.substring(e.lastIndexOf("//") + 4, e.lastIndexOf("com") + 3);
           this.moreGameUrl = "http://m.wesane.com/"*/
         },
-        gameOverShowText: function (e, t) {
-          this.ajaxLoad("http://www.wesane.com/admin.php/Gamescore/saveGamescore", "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)
+        gameOverShowText: function (e, t) {/*may
+          this.ajaxLoad("http://www.wesane.com/admin.php/Gamescore/saveGamescore", "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)*/
         },
-        gamePV_load: function () {
-          this.ajaxLoad("http://www.wesane.com/admin.php/Activityshow/gamelogo", "gameID=" + this.gameHttpId, this.ajaxOnLogoResult)
+        gamePV_load: function () {/*may
+          this.ajaxLoad("http://www.wesane.com/admin.php/Activityshow/gamelogo", "gameID=" + this.gameHttpId, this.ajaxOnLogoResult)*/
         },
         ajaxOnLogoResult: function () {
         },
